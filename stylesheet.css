@@ -1,3 +1,14 @@
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+#header-container {
+	text-align: center;
+}
+#header-text {
+    font-family: 'Dancing Script', cursive;
+	font-size: 3rem;
+}
 #animation-container--master {
 	display: flex;
 	flex-direction: column;
@@ -11,6 +22,7 @@
 	background: #30e8bf;
     background: -webkit-linear-gradient(to right, #30e8bf, #ff8235);
     background: linear-gradient(to right, #30e8bf, #ff8235);
+    border-top: dashed 2px black;
     border-bottom: dashed 2px black;
 }
 

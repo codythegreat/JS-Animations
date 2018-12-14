@@ -1,0 +1,48 @@
+#animation-container--master {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#animation-container--sliding-block {
+	width: 400px;
+	height: 50px;
+	position: relative;
+	background: #30e8bf;
+    background: -webkit-linear-gradient(to right, #30e8bf, #ff8235);
+    background: linear-gradient(to right, #30e8bf, #ff8235);
+    border-bottom: dashed 2px black;
+}
+
+#moving-element {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background: black;
+}
+
+#animation-container--resizing-blocks {
+	height: 250px;
+	width: 400px;
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+	background: #30e8bf;
+    background: -webkit-linear-gradient(to right, #30e8bf, #ff8235);
+    background: linear-gradient(to right, #30e8bf, #ff8235);
+    border-bottom: dashed 2px black;
+}
+
+#resizing-element-horizontal {
+	width: 100px;
+	height: 25px;
+	margin-right: 105px;
+	background: black;
+}
+#resizing-element-vertical {
+	width: 25px;
+	height: 100px;
+	background: black;
+}

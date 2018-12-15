@@ -36,7 +36,7 @@ const resizingBlocks = () => {
 
 const bounceBlock = () => {
 	let bouncingBlock = document.getElementById('bouncing-block');
-	let bounceInterval = setInterval(function() {bounce()}, .1);
+	let bounceInterval = setInterval(function() {bounce()}, 5);
 	let lastBounce = 0;
 	let pixelPos = 0;
 	let movingUp = true;

@@ -107,3 +107,24 @@ body {
     border-top: dashed 2px black;
     border-bottom: dashed 2px black;
 }
+
+#animation-container--alternating-block {
+    width: 400px;
+	height: 200px;
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+	background: #30e8bf;
+    background: -webkit-linear-gradient(to right, #30e8bf, #ff8235);
+    background: linear-gradient(to right, #30e8bf, #ff8235);
+    border-top: dashed 2px black;
+    border-bottom: dashed 2px black;
+}
+#alternating-block {
+	width: 100px;
+	height: 100px;
+	background:rgba(56,255,255,0.1);
+}

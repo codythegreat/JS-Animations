@@ -63,3 +63,23 @@ const bounceBlock = () => {
 		}
 	}
 };
+
+const alternatingBorders = () => {
+	let alternatingBlock = document.getElementById('alternating-block');
+	let intervalAlternateBorder = setInterval(function() {alternateBorder()}, 300);
+	const alternateBorder = () => {
+		if (alternatingBlock.style.borderTop != '') {
+			alternatingBlock.style.borderTop = '';
+			alternatingBlock.style.borderRight = 'thick solid black';
+		} else if (alternatingBlock.style.borderRight != '') {
+			alternatingBlock.style.borderRight = '';
+			alternatingBlock.style.borderBottom = 'thick solid black';
+		} else if (alternatingBlock.style.borderBottom != '') {
+			alternatingBlock.style.borderBottom = '';
+			alternatingBlock.style.borderLeft = 'thick solid black';
+		} else {
+			alternatingBlock.style.borderLeft = '';
+			alternatingBlock.style.borderTop = 'thick solid black';
+		}
+	}
+}

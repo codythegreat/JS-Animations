@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lato" rel="stylesheet">
   </head>
-  <body onload="movingSquare();resizingBlocks();bounceBlock();">
+  <body onload="movingSquare();resizingBlocks();bounceBlock();alternatingBorders();">
   	<div id="header-container">
   		<h1 id="header-text">Simple JS Animations</h1>
   	</div>
@@ -30,6 +30,8 @@
       <div class="description" id="description-container--resizing-blocks">
       	<p>Resizes block width and height. resizeBlocks()</p>
       </div>
+    </div>
+    <div class="container">
       <div id="animation-container--bouncing-block">
       	<div class="square" id="bouncing-block"></div>
       </div>
@@ -37,6 +39,13 @@
       	<p>Bounces the block. bounceBlock()</p>
       </div>
     </div>
+    <div class="container">
+      <div id="animation-container--alternating-block">
+        <div class="square" id="alternating-block"></div>
+      </div>
+      <div class="description" id="description-container--alternating-block">
+      	<p>Continually changes the border from side to side. alternatingBorders()</p>
+      </div>
     <script src="basic_animations.js"></script>
   </body>
 </html>

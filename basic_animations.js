@@ -49,15 +49,15 @@ const bounceBlock = () => {
 			movingUp = true;
 		}
 		
-		if (movingUp == true && pixelPos != lastBounce) {
-			pixelPos++;
+		if (movingUp == true && pixelPos < lastBounce) {
+			pixelPos += 2;
 			bouncingBlock.style.bottom = `${pixelPos}px`;
-		} else if (movingUp == true && pixelPos == lastBounce) {
+		} else if (movingUp == true && pixelPos >= lastBounce) {
 			movingUp = false;
-		} else if (movingUp == false && pixelPos != 0) {
-			pixelPos--;
+		} else if (movingUp == false && pixelPos > 0) {
+			pixelPos -= 2;
 			bouncingBlock.style.bottom = `${pixelPos}px`;
-		} else if (movingUp == false && pixelPos == 0) {
+		} else if (movingUp == false && pixelPos <= 0) {
 			movingUp = true;
 			lastBounce = Math.floor(lastBounce/1.5);
 		}

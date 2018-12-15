@@ -7,6 +7,13 @@ body {
 	justify-content: center;
 	align-items: center;
 }
+.animation-container {
+	background: #30e8bf;
+    background: -webkit-linear-gradient(to right, #30e8bf, #ff8235);
+    background: linear-gradient(to right, #30e8bf, #ff8235);
+    border-top: dashed 2px black;
+    border-bottom: dashed 2px black;
+}
 #header-container {
 	text-align: center;
 	max-width: 80%;
@@ -35,11 +42,6 @@ body {
 	width: 400px;
 	height: 50px;
 	position: relative;
-	background: #30e8bf;
-    background: -webkit-linear-gradient(to right, #30e8bf, #ff8235);
-    background: linear-gradient(to right, #30e8bf, #ff8235);
-    border-top: dashed 2px black;
-    border-bottom: dashed 2px black;
 }
 .description {
   overflow: hidden;
@@ -73,11 +75,6 @@ body {
 	flex-grow: 1;
 	justify-content: center;
 	align-items: center;
-	background: #30e8bf;
-    background: -webkit-linear-gradient(to right, #30e8bf, #ff8235);
-    background: linear-gradient(to right, #30e8bf, #ff8235);
-    border-top: dashed 2px black;
-    border-bottom: dashed 2px black;
 }
 
 #resizing-element-horizontal {
@@ -101,11 +98,6 @@ body {
 	flex-grow: 1;
 	justify-content: center;
 	align-items: center;
-	background: #30e8bf;
-    background: -webkit-linear-gradient(to right, #30e8bf, #ff8235);
-    background: linear-gradient(to right, #30e8bf, #ff8235);
-    border-top: dashed 2px black;
-    border-bottom: dashed 2px black;
 }
 
 #animation-container--alternating-block {
@@ -117,11 +109,6 @@ body {
 	flex-grow: 1;
 	justify-content: center;
 	align-items: center;
-	background: #30e8bf;
-    background: -webkit-linear-gradient(to right, #30e8bf, #ff8235);
-    background: linear-gradient(to right, #30e8bf, #ff8235);
-    border-top: dashed 2px black;
-    border-bottom: dashed 2px black;
 }
 #alternating-block {
 	width: 100px;

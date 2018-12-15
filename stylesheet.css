@@ -1,13 +1,29 @@
 body {
 	font-family: 'Lato', sans-serif;
 }
-
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 #header-container {
 	text-align: center;
+	max-width: 80%;
+	margin: auto;
 }
 #header-text {
     font-family: 'Dancing Script', cursive;
 	font-size: 3rem;
+}
+#secondary-header-container {
+	text-align: center;
+	max-width: 80%;
+	margin: auto;
+	padding-bottom: 10px;
+}
+#secondary-header-text {
+	font-size: 2rem;
 }
 #animation-container--master {
 	display: flex;
@@ -24,6 +40,22 @@ body {
     background: linear-gradient(to right, #30e8bf, #ff8235);
     border-top: dashed 2px black;
     border-bottom: dashed 2px black;
+}
+.description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 400px;
+  height: 30px;
+  text-align: center;
+  font-size: .8rem;
+  margin-top: -12px;
+}
+
+.square {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background: black;
 }
 
 #moving-element {
@@ -44,17 +76,34 @@ body {
 	background: #30e8bf;
     background: -webkit-linear-gradient(to right, #30e8bf, #ff8235);
     background: linear-gradient(to right, #30e8bf, #ff8235);
+    border-top: dashed 2px black;
     border-bottom: dashed 2px black;
 }
 
 #resizing-element-horizontal {
 	width: 100px;
 	height: 25px;
-	margin-right: 105px;
+	margin-right: 120px;
 	background: black;
 }
 #resizing-element-vertical {
 	width: 25px;
 	height: 100px;
 	background: black;
+}
+
+#animation-container--bouncing-block {
+	width: 400px;
+	height: 200px;
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+	background: #30e8bf;
+    background: -webkit-linear-gradient(to right, #30e8bf, #ff8235);
+    background: linear-gradient(to right, #30e8bf, #ff8235);
+    border-top: dashed 2px black;
+    border-bottom: dashed 2px black;
 }

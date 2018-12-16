@@ -82,4 +82,5 @@ const alternatingBorders = () => {
 			alternatingBlock.style.borderTop = 'thick solid black';
 		}
 	}
-}
+};
+

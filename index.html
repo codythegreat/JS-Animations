@@ -6,46 +6,59 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lato" rel="stylesheet">
   </head>
-  <body onload="movingSquare();resizingBlocks();bounceBlock();alternatingBorders();">
+  <body onload="movingSquare();resizingBlocks();bounceBlock();alternatingBorders();applyCanvasGradient('canvas-gradient', '#f3904f', '#3b4371');">
   	<div id="header-container">
   		<h1 id="header-text">Simple JS Animations</h1>
   	</div>
   	<div id="secondary-header-container">
   	  <p if="secondary-header-text">All of the animations on this page are available within this <a href="https://github.com/codythegreat/JS-Animations/blob/master/basic_animations.js">JavaScript File</a>. Navigate to the corresponding function to find the code used to create each animation. All animations are created by Cody Maxie and are available for free use.</p>
     </div>
-  	<div class="container">
-      <p id="basic-animations-header">Basic Animations:</p>
-      <div class="animation-container" id="animation-container--sliding-block">
-	    <div class="square" id="moving-element"></div>
+    <div id="row-container-animations-body">
+  	  <div class="container" id="div-animations-container">
+        <p id="div-animations-header">Div Animations:</p>
+        <div class="animation-container" id="animation-container--sliding-block">
+	      <div class="square" id="moving-element"></div>
+        </div>
+        <div class="description" id="description-container--sliding-block">
+      	  <p>Moves a 50 pixel block back and forth. movingSquare()</p>
+        </div>
+        <div class="animation-container" id="animation-container--resizing-blocks">
+      	  <div id="resizing-element-horizontal"></div>
+    	  <div id="resizing-element-vertical"></div>
+        </div>
+        <div class="description" id="description-container--resizing-blocks">
+      	  <p>Resizes block width and height. resizeBlocks()</p>
+        </div>
+        <div class="animation-container" id="animation-container--bouncing-block">
+      	  <div class="square" id="bouncing-block"></div>
+        </div>
+        <div class="description" id="description-container--bouncing-block">
+      	  <p>Bounces the block. bounceBlock()</p>
+        </div>
+        <div class="animation-container" id="animation-container--alternating-block">
+          <div class="square" id="alternating-block"></div>
+        </div>
+        <div class="description" id="description-container--alternating-block">
+      	  <p>Continually changes the border from side to side. alternatingBorders()</p>
+        </div>
       </div>
-      <div class="description" id="description-container--sliding-block">
-      	<p>Moves a 50 pixel block back and forth. movingSquare()</p>
+      <div class="container" id="canvas-animations-container">
+      	<p id="canvas-animations-header">Canvas Animations:</p>
+      	<canvas class="canvas" id="canvas-gradient" width="400" height="200"></canvas>
+      	<div class="description" id="canvas-description">
+      	  <p>Creates a simple gradient for the canvas. applyCanvasGradient()</p>
+      	</div>
+      	<canvas class="canvas" id="canvas-flag" width="400" height="200"></canvas>
+        <div class="description" id="canvas-description-2">
+      	  <p>To be added.</p>
+      	</div>
+        <canvas class="canvas" id="canvas-3" width="400" height="200"></canvas>
+        <div class="description" id="canvas-description-3">
+      	  <p>To be added.</p>
+      	</div>
       </div>
     </div>
-    <div class="container">
-      <div class="animation-container" id="animation-container--resizing-blocks">
-      	<div id="resizing-element-horizontal"></div>
-    	<div id="resizing-element-vertical"></div>
-      </div>
-      <div class="description" id="description-container--resizing-blocks">
-      	<p>Resizes block width and height. resizeBlocks()</p>
-      </div>
-    </div>
-    <div class="container">
-      <div class="animation-container" id="animation-container--bouncing-block">
-      	<div class="square" id="bouncing-block"></div>
-      </div>
-      <div class="description" id="description-container--bouncing-block">
-      	<p>Bounces the block. bounceBlock()</p>
-      </div>
-    </div>
-    <div class="container">
-      <div class="animation-container" id="animation-container--alternating-block">
-        <div class="square" id="alternating-block"></div>
-      </div>
-      <div class="description" id="description-container--alternating-block">
-      	<p>Continually changes the border from side to side. alternatingBorders()</p>
-      </div>
     <script src="basic_animations.js"></script>
+    <script src="canvas_animations.js"></script>
   </body>
 </html>

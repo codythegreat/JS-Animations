@@ -14,6 +14,28 @@ body {
     border-top: dashed 2px black;
     border-bottom: dashed 2px black;
 }
+.square {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background: black;
+}
+.canvas {
+    border-top: dashed 2px black;
+    border-bottom: dashed 2px black;
+}
+#row-container-animations-body {
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+}
+#div-animations-container {
+	margin-right: 5%;
+}
+#canvax-animations-container {
+	margin-left: 5%;
+}
 #header-container {
 	text-align: center;
 	max-width: 80%;
@@ -52,14 +74,6 @@ body {
   font-size: .8rem;
   margin-top: -12px;
 }
-
-.square {
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	background: black;
-}
-
 #moving-element {
 	width: 50px;
 	height: 50px;
@@ -114,4 +128,40 @@ body {
 	width: 100px;
 	height: 100px;
 	background:rgba(56,255,255,0.1);
+}
+@media only screen and (max-device-width: 812px) {
+  .animation-container {
+  	min-width: 80%;
+  }
+  .canvas {
+  	min-width: 80%;
+  }
+  #row-container-animations-body {
+	flex-direction: column;
+	align-items: center;
+  }
+  #div-animations-container {
+	margin-right: 0%;
+  }
+  #canvax-animations-container {
+	margin-left: 0%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .animation-container {
+  	min-width: 80%;
+  }
+  .canvas {
+  	min-width: 80%;
+  }
+  #row-container-animations-body {
+	flex-direction: column;
+	align-items: center;
+  }
+  #div-animations-container {
+	margin-right: 0%;
+  }
+  #canvax-animations-container {
+	margin-left: 0%;
+  }
 }
